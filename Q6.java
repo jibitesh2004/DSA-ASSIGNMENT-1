@@ -1,14 +1,11 @@
 import java.util.*;
 public class Q6{
     public static boolean isOdd(int a){
-        int b = a & 1;
-        if(b == 0){
-           return true;
+       int bitmask = a & 1;
+        if(a != 1){
+            return false;
         }
-        return false;
-        // else{
-        //     System.out.println("Odd");
-        // }
+        return true;
 
     }
     public static void main(String args[]){
